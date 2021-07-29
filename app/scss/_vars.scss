@@ -1,5 +1,16 @@
 $orange: #FB7D30;
 $text: #252525;
+$grey: #898989;
+$dgrey: #707070;
+
 @mixin lora{
     font-family: 'Lora', sans-serif;
+}
+@mixin lora500{
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+}
+@mixin lora700{
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
 }
