@@ -72,6 +72,8 @@
             padding: 8px 14px;
             outline: none;
             margin-top: 15px;
+            font-size: 14px;
+            color: $grey;
             &::placeholder {
                 font-size: 14px;
                 color: $grey;
@@ -115,6 +117,7 @@
 .request_condition {
     color: $grey;
     font-size: 14px;
+    max-width: 250px;
 }
 .promotion {
     position: absolute;
@@ -170,6 +173,7 @@
             font-weight: 500;
             font-size: 14px;
             background-color: $orange;
+            line-height: 16px;
         }
     }
 }
@@ -189,6 +193,10 @@
 //advantages start
 
 .advantages {
+    position: relative;
+    max-width: 1400px;
+    padding: 0px 10px;
+    margin: 0 auto;
     margin-top: 164px;
 }
 .advantages_title {
@@ -205,57 +213,200 @@
 .advantages_content {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 169px;
 }
 .advantages_item {
     &-title {
         font-weight: 500;
         font-size: 20px;
         margin-bottom: 23px;
+        position: relative;
+        span {
+            position: absolute;
+            @include lora;
+            font-size: 24px;
+            color: $dgrey;
+            line-height: 31px;
+            padding: 19px 22px;
+            max-width: 70px;
+            max-height: 70px;
+            left: -90px;
+            top: -23px;
+            border: 1px solid $dgrey;
+            border-radius: 50%;
+        }
     }
     &-text {
-        max-width: 376px;
+        max-width: 378px;
     }
     & + .advantages_item {
         margin-top: 50px;
     }
     position: relative;
-    &::before {
-        content: "";
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        color: $dgrey;
-        border: 1px solid $dgrey;
-        position: absolute;
-        top: -23px;
-        @include lora;
-        font-size: 24px;
-        text-align: center;
-        
-    }
 }
 .advantages_content-left {
     .advantages_item {
         padding-left: 95px;
-        &::before {
-            left: 0;
-        }
     }
 }
 .advantages_content-right {
     .advantages_item {
         padding-right: 95px;
-        &::before {
-            right: 0;
+        text-align: right;
+        span {
+            text-align: left;
+            right: -93px;
+            left: auto;
         }
     }
 }
-#adv1 {
-    &::before {
-        content: "01";
-    }
+.advantages_img {
+    position: absolute;
+    top: 146px;
+    left: 466px;
+    z-index: -1;
 }
 
 //advantages end
+
+//renovation start
+
+.renovation {
+    background-color: $beige;
+    padding-bottom: 285px;
+}
+.renovation_box {
+    display: flex;
+    justify-content: space-between;
+}
+.renovation_title {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    @include lora500;
+    font-size: 36px;
+    text-align: center;
+    div {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+}
+.renovation_item {
+    max-width: 280px;
+    width: 100%;
+    position: relative;
+}
+.renovation_content {
+    max-width: 240px;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #fff;
+    text-align: center;
+    &-title {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 167px;
+    &-info {
+        font-size: 18px;
+        div {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    &-btn {
+        max-width: 200px;
+        width: 100%;
+        color: #fff;
+        background-color: $orange;
+        padding: 9px 0px;
+    }
+}
+.renovation_item.renovation_recommend {
+    .renovation_content {
+        padding-top: 30px;
+        top: 137px;
+    }
+    .renovation_content-title::before {
+        content: "Рекомендуем!";
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+        text-decoration: underline;
+        color: $orange;
+        margin-bottom: 8px;
+    }
+}
+
+//renovation end
+
+//renovation-adv start
+
+.renovation-adv_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 84px 0px;
+}
+.renovation-adv_content {
+    &-title {
+        @include lora500;
+        font-size: 36px;
+        span {
+            color: $orange;
+        }
+        padding-bottom: 21px;
+        max-width: 500px;
+    }
+    &-text {
+        padding: 43px 33px;
+        max-width: 650px;
+        width: 100%;
+        border: 1px solid #ded4d4;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &-row{
+        & + .renovation-adv_content-row{
+            margin-top: 30px;
+        }
+    }
+}
+
+//renovation-adv end
+
+//signup start
+
+.signup{
+    background-color: $beige;
+    padding: 90px 0px;
+    position: relative;
+}
+.signup_inner{
+    display: flex;
+    flex-wrap: wrap
+}
+.signup_box{
+    max-width: 630px;
+    width: 100%;
+    &-title{
+        @include lora500;
+        font-size: 36px;
+        margin-bottom: 45px;
+        span{
+            color: $orange;
+        }
+    }
+    &-subtitle{
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+//signup end
 
 @import "media.scss";
