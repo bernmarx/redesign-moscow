@@ -24,9 +24,9 @@
                 </a>
                 <nav class="header_nav">
                     <ul>
-                        <li class="header_nav-btn"><a href="#">Расчет</a></li>
-                        <li class="header_nav-btn"><a href="#">Работы</a></li>
-                        <li class="header_nav-btn"><a href="#">Контроль</a></li>
+                        <li class="header_nav-btn"><a href="#advantages">Расчет</a></li>
+                        <li class="header_nav-btn"><a href="#renovation">Работы</a></li>
+                        <li class="header_nav-btn"><a href="#control">Контроль</a></li>
                     </ul>
                 </nav>
                 <div class="header_social">
@@ -51,7 +51,7 @@
                     Запишитесь на бесплатный замер и получите смету уже сегодня. Мы приедем в течение часа!
                 </div>
                 <form>
-                    <input placeholder="Имя" required type="text">
+                    <input placeholder="Имя" type="text">
                     <input placeholder="Телефон*" required type="text">
                     <button>Записаться на замер</button>
                 </form>
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="advantages_title">
             Оплата по факту <span>выполненных работ!</span>
         </div>
@@ -143,7 +143,7 @@
 
     </section>
 
-    <section class="renovation">
+    <section id="renovation" class="renovation">
         <div class="container">
             <div class="renovation_title">
                 Уложимся в любой бюджет
@@ -233,7 +233,7 @@
         </div>
     </section>
 
-    <section class="renovation-adv">
+    <section id="control" class="renovation-adv">
         <div class="container">
             <div class="renovation-adv_box">
                 <div class="renovation-adv_content">
@@ -259,7 +259,7 @@
         <div class="container">
             <div class="signup_inner">
                 <img src="images/content/form-img.png" alt="">
-                <div class="signup_box">
+                <div class="signup_box signup_box-advantages">
                     <div class="signup_box-title">
                         Бесплатно сделаем замер и <span>рассчитаем смету</span> уже сегодня!
                     </div>
@@ -295,12 +295,15 @@
                             при
                             выполнении ремонтных работ.</div>
                     </div>
+                    <div class="signup_box-img" style="background-image: url(images/content/signup_house.png);"></div>
                 </div>
                 <div class="showcase">
                     <div class="showcase_title">
                         Ремонт под ключ ЖК “Level Амурская”
                     </div>
                     <div class="showcase_slider">
+                        <div><img src="images/content/showcase1.png" alt=""></div>
+                        <div><img src="images/content/showcase1.png" alt=""></div>
 
                     </div>
                     <div class="showcase_desc">
@@ -318,7 +321,8 @@
                         Ремонт офисного помещения
                     </div>
                     <div class="showcase_slider">
-
+                        <div><img src="images/content/showcase2.png" alt=""></div>
+                        <div><img src="images/content/showcase2.png" alt=""></div>
                     </div>
                     <div class="showcase_desc">
                         <div class="showcase_desc-row">Тип жилья: <span>новостройка</span></div>
@@ -335,7 +339,8 @@
                         Ремонт “хрущевки” под ключ
                     </div>
                     <div class="showcase_slider">
-
+                        <div><img src="images/content/showcase3.png" alt=""></div>
+                        <div><img src="images/content/showcase3.png" alt=""></div>
                     </div>
                     <div class="showcase_desc">
                         <div class="showcase_desc-row">Тип жилья: <span>хрущевка</span></div>
@@ -356,7 +361,7 @@
                     </div>
                     <form>
                         <input placeholder="Имя" type="text">
-                        <input placeholder="Телефон*" type="text">
+                        <input required placeholder="Телефон*" type="text">
                         <button>Записаться на замер</button>
                     </form>
                     <div class="signup_form-condition">
@@ -367,9 +372,109 @@
         </div>
     </section>
 
+    <section class="faq">
+        <div class="container">
+            <div class="faq_title">Часто задаваемые вопросы</div>
+            <div class="faq_inner">
+                <div class="faq_content">
+                    <div class="faq_item">
+                        <div class="faq_item-title">
+                            <div>Какую гарантию вы даете на ремонт?</div>
+                            <div class="faq_item-cross"></div>
+                        </div>
+                        <div class="faq_item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, fugiat. Commodi accusantium,
+                            ducimus quidem, in magnam deserunt quod consequatur similique veritatis assumenda itaque
+                            omnis enim aperiam quo doloribus! Eius, architecto.
+                        </div>
+                    </div>
+                    <div class="faq_item">
+                        <div class="faq_item-title">
+                            <div>Могу ли я оставить вещи в квартире на время ремонта?</div>
+                            <div class="faq_item-cross"></div>
+                        </div>
+                        <div class="faq_item-text">
+                            Да, вы можете оставить вещи в ремонтируемой квартире, но учитывайте, что строительная пыль и
+                            перенос могут повредить ваши вещи. Кроме того, перенос вещей при ремонте может замедлить
+                            скорость работ.
+                        </div>
+                    </div>
+                    <div class="faq_item">
+                        <div class="faq_item-title">
+                            <div>Не будет ли проблем с соседями из-за шума во время ремонта?</div>
+                            <div class="faq_item-cross"></div>
+                        </div>
+                        <div class="faq_item-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga corporis eos nemo, incidunt
+                            quia perspiciatis facilis mollitia cumque repudiandae? Perferendis nemo eum incidunt soluta
+                            doloribus itaque similique officia, veniam facilis.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_form">
+                    <div class="faq_form-title">
+                        Если остались вопросы, напишите нам!
+                    </div>
+                    <form>
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="Телефон*" required type="text">
+                        <button>Написать</button>
+                    </form>
+                    <div class="faq_form-condition">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.2374304680047!2d37.629993951232514!3d55.78911499656318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7367545f91%3A0x5c47cd4bcb33b9d8!2z0YPQuy4g0JPQuNC70Y_RgNC-0LLRgdC60L7Qs9C-LCA2NSwg0JzQvtGB0LrQstCwLCAxMjkwOTA!5e0!3m2!1sru!2sru!4v1628512426545!5m2!1sru!2sru"
+            width="1920" height="447" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_item">
+                    <img class="footer_logo" src="images/logo-white.png" alt="">
+                    <div class="footer_text">
+                        г. Москва, ул. Гиляровского, д.65
+                    </div>
+                    <div class="footer_text">
+                        Мы занимаемся качественным ремонтом в Москве.
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div class="footer_item-title">
+                        Контакты
+                    </div>
+                    <ul>
+                        <li class="footer_phone"><a href="tel:74994441405">+7(499)-444-14-05</a></li>
+                        <li class="footer_whatsapp">+7(499)-444-14-05</li>
+                        <li class="footer_mail"><a href="mailto:remont-moscow@gmail.com">remont-moscow@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer_item">
+                    <div class="footer_item-title">
+                        Услуги
+                    </div>
+                    <ul>
+                        <li><a href="#advantages">Расчет</a></li>
+                        <li><a href="#renovation">Работы</a></li>
+                        <li><a href="#control">Контроль</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                Разработка дизайна strelaweb.ru
+            </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
